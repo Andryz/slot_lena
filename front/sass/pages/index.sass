@@ -1,0 +1,179 @@
+
+.lend-wrapp
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    position: relative
+    background: url('../img/bg.jpg') no-repeat
+    background-size: cover
+    background-color: #000
+.first-step
+    position: relative
+    display: none
+    &.active
+        display: block
+.logo
+    width: 210px
+    margin: 0 auto
+    padding-top: 25px
+.freespins
+    height: 241px
+    position: relative
+    margin-top: 38px
+    &__info
+        width: 570px
+        height: 170px
+        position: relative
+        top: calc(50% - (170px/2))
+        z-index: 1
+        display: flex
+        align-items: center
+        text-align: center
+        flex-direction: column
+        box-sizing: border-box
+        border: 5px solid #FCBC3D
+        box-shadow: 0px 0px 11px #FCBC3D
+        border-radius: 57px
+        margin: 0 auto
+        font-family: 'Roboto-Medium'
+        font-weight: 700
+        font-size: 64px
+        line-height: 75px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        text-shadow: 0px 0px 8px #FCBC3D
+        background: #610F3A
+        color: #FFD600
+    &__img
+        width: 700px
+        height: 241px
+        position: absolute
+        top: 0
+        left: calc(50% - 350px)
+        animation: arrow-down 2s infinite
+        img
+            max-height: 100%
+            width: auto
+.slot
+    width: 790px
+    height: 407px
+    position: relative
+    margin: 0 auto
+    &__img
+      //width: 906px
+      position: absolute
+      //top: -185px
+      left: calc(50% - 453px)
+      z-index: 2
+      width: 790px
+      top: -9px
+      .up, .down
+        width: 147px
+        position: absolute
+        right: -96px
+        top: -161px
+      .up
+          display: block
+      .down
+          display: none
+      &.active
+        .up
+          display: none
+        .down
+          display: block
+          top: 47px
+    .columns
+      height: 318px
+      width: 610px
+      display: flex
+      justify-content: space-between
+      position: absolute
+      top: 39px
+      left: 68px
+      overflow: hidden
+      background: url('../img/bg-slot.jpg') no-repeat
+      background-size: cover
+
+      .col
+        width: 92px
+        height: max-content
+        position: absolute
+        z-index: 1
+        bottom: -10px
+        display: flex
+        flex-direction: column
+        transition: 3s
+        img
+          width: 78px
+          padding: 12px 0
+        &-first
+          left: 50px
+        &-second
+          left: 255px
+          transition: 3.5s
+        &-third
+          right: 50px
+          transition: 4s
+
+.spin
+    width: 461px
+    height: 106px
+    display: flex
+    align-items: center
+    justify-content: center
+    letter-spacing: 0.1em
+    border: none
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 48px
+    margin: 25px auto 0
+    text-transform: uppercase
+    font-family: 'Roboto-Medium'
+    font-weight: 700
+    font-size: 55px
+    line-height: 64px
+    cursor: pointer
+    background: linear-gradient(180deg, #9A1D07 0%, #D43B20 53.04%, #FF583B 100%)
+    color: #fff
+    &:hover
+      background: linear-gradient(180deg, #7a1605 0%, #9c2b17 53.04%, #a13421 100%);
+.second-step
+  width: 100%
+  position: absolute
+  top: 200vh
+  transition-duration: 1s
+  .win-info
+    width: 1010px
+    height: 479px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    flex-direction: column
+    box-sizing: border-box
+    border-radius: 34px
+    border: 3px solid #cd5089
+    margin: 0 auto
+    font-family: 'Roboto-Medium'
+    font-weight: 700
+    font-size: 96px
+    line-height: 112px
+    text-transform: uppercase
+    background: rgba(50, 0, 25, 0.58)
+    color: #FFFFFF
+  &.active
+    top: 220px
+  a
+    margin: 55px auto 0
+    text-decoration: none
+    letter-spacing: normal
+
+
+
+
+@keyframes arrow-down
+  0%
+    transform: translate(0, -10px)
+  50%
+    transform: translate(0, 10px)
+  100%
+    transform: translate(0, -10px)

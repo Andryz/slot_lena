@@ -1,0 +1,295 @@
+// @media screen and (max-width: 1550px)
+//     body
+//         background-color: #eaeaea
+
+// @media screen and (orientation: landscape) and (max-device-width: 485px)
+//   html
+//     -webkit-transform: rotate(-90deg)
+//     -moz-transform: rotate(-90deg)
+//     -ms-transform: rotate(-90deg)
+//     -o-transform: rotate(-90deg)
+//     transform: rotate(-90deg)
+//     -webkit-transform-origin: left top
+//     -moz-transform-origin: left top
+//     -ms-transform-origin: left top
+//     -o-transform-origin: left top
+//     transform-origin: left top
+//     width: 320px
+//     height: 480px
+//     // Разрешение экрана iPhone
+//     position: absolute
+//     top: 100%
+//     left: 0
+
+// @media screen and (max-width: 1300px) and (max-height: 730px) and (min-width: 1270px) and (min-height: 650px) 
+
+
+
+@media screen and (max-width: 1700px)
+  .freespins
+    margin-top: 28px
+  .second-step.active
+    top: 180px
+@media screen and (max-width: 1650px)
+  .freespins
+    &__info
+      width: 685px
+      height: 91px
+      justify-content: center
+      flex-direction: inherit
+      font-size: 48px
+      line-height: 56px
+      letter-spacing: 3px
+      p
+        padding-left: 18px
+    &__img
+      width: 424px
+      height: 146px
+      top: 8px
+      left: calc(50% - 212px)
+  .slot
+    width: 443px
+    height: 229px
+    &__img
+      width: 443px
+      left: calc(50% - (484px/2))
+      .up, .down
+        width: 85px
+        right: -56px
+        top: -98px
+      &.active
+        .down
+          top: 25px
+    .columns
+      height: 181px
+      width: 346px
+      top: 17px
+      left: 50px
+      .col
+        width: 35px
+        &-first
+          left: 38px
+        &-second
+          left: 152px
+        &-third
+          right: 38px
+  .spin
+    height: 90px
+  .second-step
+    .win-info
+      width: 1010px
+      height: 377px
+    &.active
+      top: 150px
+    a
+      margin: 33px auto 0
+@media screen and (max-width: 1400px)
+  .freespins
+    height: 146px
+    z-index: 3
+    margin-top: 24px
+    &__info
+      top: calc(50% - (91px/2))
+  .slot
+    height: 241px
+    top: 22px
+  .spin
+    height: 80px
+  button.spin
+    margin-top: 21px
+  .second-step
+    &.active
+      top: 105px
+
+@media screen and (max-width: 1300px) and (min-width: 1260px) and (max-height: 600px) and (min-height: 540px)
+  .freespins
+    margin-top: 8px
+  .spin
+    height: 70px
+    font-size: 42px
+    margin-top: 20px
+  .second-step.active
+    top: 96px
+    a
+      margin-top: 18px
+
+@media screen and (max-width: 1000px)
+  .freespins
+    margin-top: 90px
+  .spin, button.spin
+    margin-top: 70px
+  .second-step
+    .win-info
+      width: 90%
+      font-size: 56px
+      line-height: 76px
+
+@media screen and (max-width: 775px) and (max-height: 1035px) and (min-width: 600px) and (min-height: 800px)
+  .lend-wrapp
+    background: url('../img/bg-mob.png') #000 no-repeat
+    background-size: cover
+    
+@media screen and (max-width: 1030px) and (max-height: 1370px) and (min-width: 1015px) and (min-height: 1200px)
+  .lend-wrapp
+    background: url('../img/bg-mob.png') #000 no-repeat
+    background-size: cover
+  .freespins
+    margin-top: 90px
+  .slot
+    top: 100px
+  button.spin
+    margin-top: 180px
+  a.spin
+    margin-top: 50px
+  .second-step
+    &.active
+      top: 350px
+    .win-info
+      width: 90%
+      font-size: 56px
+      line-height: 76px
+
+@media screen and (max-width: 1370px) and (max-height: 1030px) and (min-width: 1200px) and (min-height: 850px)
+  .freespins
+    margin-top: 90px
+  .slot
+    top: 100px
+  button.spin
+    margin-top: 180px
+  a.spin
+    margin-top: 50px
+  .second-step
+    &.active
+      top: 200px
+    .win-info
+      height: 450px
+
+@media screen and (max-width: 655px)
+  .lend-wrapp
+    background: url('../img/bg-mob.png') #000 no-repeat
+    background-size: cover
+  .first-step
+    top: calc(50% - (548px/2))
+  .freespins
+    height: 104px
+    margin-top: 10px
+    &__info
+      width: 194px
+      height: 70px
+      flex-direction: column
+      border: 2px solid #FCBC3D
+      border-radius: 10px
+      font-size: 20px
+      line-height: 24px
+      letter-spacing: 0.1em
+      top: calc(50% - (70px/2))
+      p
+        padding-left: 18px
+    &__img
+      width: 195px
+      height: 104px
+      top: 8px
+      left: calc(50% - (195px/2))
+      img
+        min-height: 100%
+  .slot
+    width: 296px
+    height: 153px
+    top: 24px
+    &__img
+      width: 296px
+      left: calc(50% - (318px/2))
+      .up, .down
+        width: 57px
+        right: -38px
+        top: -66px
+      &.active
+        .down
+          //top: 25px
+          top: 18px
+    .columns
+      width: 232px
+      height: 121px
+      top: 8px
+      left: 36px
+      .col
+        width: 23px
+        bottom: -3px
+        img
+          padding: 8px 0
+        &-first
+          left: 26px
+        &-second
+          left: 104px
+        &-third
+          right: 26px
+  .spin
+    width: 286px
+    height: 80px
+    margin-top: 47px
+    font-size: 36px
+    line-height: 42px
+  a.spin
+    margin-top: 33px
+  .second-step
+    &.active
+      top: calc(50% - (325px/2))
+    .win-info
+      width: 340px
+      height: 248px
+      font-size: 40px
+      line-height: 47px
+      border-radius: 34px
+
+@media screen and (max-height: 430px)
+  .lend-wrapp
+    height: 600px
+    overflow-y: scroll
+  .second-step
+    display: none
+    &.active
+      display: block
+
+
+
+
+
+
+
+
+//@media screen and (max-width: 775px) and (max-height: 1035px) and (min-width: 600px) and (min-height: 800px)
+
+
+
+// @media screen and (max-width: 959px)
+
+
+
+
+// @media screen and (max-width: 768px)
+
+
+// @media screen and (max-width: 515px)
+
+
+// @media screen and (max-width: 400px)
+
+
+// @media screen and (max-height: 430px)
+
+
+
+// @media screen and (max-width: 325px)
+
+
+// @media screen and (max-width: 330px) and (max-height: 578px) and (min-width: 315px) and (min-height: 558px) 
+
+
+// @media screen and (max-width: 330px) and (max-height: 478px) and (min-width: 315px) and (min-height: 458px) 
+
+
+// // -------------------------------- iPad ----------------------------------------------
+// @media screen and (max-width: 775px) and (max-height: 1030px) and (min-width: 760px) and (min-height: 1020px) 
+
+
+// // -------------------------------- iPad ----------------------------------------------
